@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Profile</title>
+        <style>
+            body, html {
+                height: 100%;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            a:visited {
+                color:#000;
+            }
+
+            a:hover {
+                color:grey;
+            }
+
+            .items {
+                line-height: 30px;
+            }
+
+            /*for parallax*/
+            .parallax-1, .parallax-2, .parallax-3, .parallax-4 {
+                position: relative;
+                opacity: 0.65;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .parallax-1 {
+                background-image: url("https://lp-cms-production.imgix.net/2021-12/westfjords-bike-01-evan-ruderman-23866-RM.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2");
+                min-height: 100%;
+                height:700px;
+            }
+
+            .parallax-2 {
+                background-image: url("https://lp-cms-production.imgix.net/2021-12/500pxRF_195165045.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2");
+                min-height: 100%;
+                height:600px;
+            }
+
+            .parallax-3 {
+                background-image: url("https://lp-cms-production.imgix.net/2021-12/iceland%20photo%20tour%20main%20isley%20rust%20rm.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2");
+                min-height: 100%;
+                height:600px;
+            }
+
+            .parallax-4 {
+                background-image: url("https://lp-cms-production.imgix.net/2021-12/GettyImages-10193580%20%281%29.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2");
+                min-height: 100%;
+                height:600px;
+            }
+
+            p {
+                text-align: center;
+                padding: 20px 80px;
+                text-align: justify;
+            }
+
+            .caption {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                color: #000;
+                font-size: 40px;
+            }
+
+            .caption span.border {
+                background-color: #111;
+                color: #fff;
+                padding: 18px;
+                font-size: 25px;
+                letter-spacing: 10px;
+            }
+
+            .heading {
+                font-size: 25px;
+            }
+
+            .bg-white {
+                color: #777;
+                background-color: white;
+                text-align: center;
+                text-align: justify;
+            }
+
+            .bg-grey {
+                background-color: transparent;
+                color: #000000;
+            }
+
+            /*for smooth sliding*/
+            .wrapper {
+                height: 100vh;
+                overflow:scroll;
+                scroll-behavior: smooth;
+            }
+
+            ul,li {
+                list-style: none;
+            }
+
+            /*card for placing items*/
+            .card {
+                background: white;
+                margin: 60px;
+                box-shadow: 0 10px 12px rgb(0 0 0 / 20%);
+                border-radius: 15px;
+                padding: 13px;
+            }
+
+            .friend-card {
+                background: white;
+                margin: 100px;
+                box-shadow: 0 10px 12px rgb(0 0 0 / 20%);
+                border-radius: 15px;
+                padding: 13px;
+                width: 30%;
+
+            }
+
+            /*photo*/
+            div.img {
+                margin:5px;
+                border:1px solid #ccc;
+                float:left;
+                width:180px;
+            }
+            
+            div.img:hover{
+                border:1px solid #777;
+            }
+            
+            div.img img {
+                width: 100%;
+                height: auto;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+<!--comment: Right-->
+        <div style="width:100%; margin:0 auto; overflow:auto; _display:inline-block;">
+            <div class="wrapper" style="width:75%; float:right">
+                <div class="parallax-1">
+                    <div class="caption">
+                        <span class="border">Welcome to Travel Fun!</span>
+                    </div>
+                </div>
+                
+                <div id="intro" class="bg-white">
+                    <p class="heading">Hello Everyone! This is XX's profile!</p>
+                    <p>I am a person who enjoys a lot in travelling. In my spare time, I would pick up my bag and start a journey by myself at anywhere anytime. I have been to XXXX, XXXX, XXXX etc. in the past two decades. If you are interested in my story, you can take a look at my profile and talk to me. I would be greatful if I could make friends with you guys!</p>
+                    <p>(self-defined text)</p>
+                </div>
+        
+                <div id="post" class="parallax-2">
+                    <div class="bg-grey">
+                        <p class="heading">My posts</p>
+                        <div class="card">
+                            <p>My travel to XXX is a fantastic journey with countless adventures and suprises.</p>
+                        </div>
+                        <div class="card">
+                            <p>My travel to XXX is a fantastic journey with countless adventures and suprises.</p>
+                        </div>
+                        <div class="card">
+                            <p>Start a new post...</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="photo" class="bg-white">
+                    <p class="heading">Photos</p>
+                    <p>This part I haven't thought of a good idea to present the photos</p>
+
+                </div>
+        
+                <div id="friend" class="parallax-3">
+                    <div class="bg-grey">
+                        <p class="heading">Friends</p>
+                        <div class="friend-card">
+                            <a href="">AA's Homepage</a>
+                        </div>
+                        <div class="friend-card">
+                            <a href="">BB's Homepage</a>
+                        </div>
+                        <div class="friend-card">
+                            <a href="">CC's Homepage</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="gallery" class="bg-white">
+                    <p class="heading">Gallery</p>
+                    <p>This is the place to show the posts of others (it should be same as the page where people who do not log in can see, or we can provide a link here and it will lead users to that page)</p>
+                </div>
+            
+                <div class="parallax-4">
+                    <div class="caption">
+                        <span class="border">Enjoy Travel Fun!</span>
+                    </div>
+                </div>
+            </div>
+        
+<!--Commnet: Left-->
+            <div style="margin-right:210px;position:fixed;width:25%;">
+                <div class="nav-container">
+                    <div id="s-nav" class="nav left-align">
+                        <div class="logo full-height">
+                                <div>
+                                    <div class="s-component-content">
+                                        <div class="s-img-wrapper" style="text-align: center; padding:10px;">
+                                            <img style="border-radius: 50%;" width="150" src="https://ae01.alicdn.com/kf/Haa0ced1ada6e496084f1a49784848984s.jpg" alt="Your_pic">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <br/>
+                        <div class="name">
+                            <div style="text-align:center;font-size:25px;">
+                                <div>User's name</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="scroll" style="height:auto">
+                            <ul class="items" style="padding:20px 80px;">
+                                <li>
+                                    <a class="nav-left" href="#intro">Introduction</a>
+                                </li>
+                                <li>
+                                    <a class="nav-left" href="#post">My Posts</a>
+                                </li>
+                                <li>
+                                    <a class="nav-left" href="#photo">Photos</a>
+                                </li>
+                                <li>
+                                    <a class="nav-left" href="#friend">Friends</a>
+                                </li>
+                                <li>
+                                    <a class="nav-left" href="#gallery">Gallery</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
